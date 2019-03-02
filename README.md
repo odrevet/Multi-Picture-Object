@@ -1,5 +1,3 @@
-# Synopsis
-
 generate a Multiple Picture Object files (.MPO) 3D picture from two jpeg files.
 
 This software implement in PHP the CIPA's MPO official reference document
@@ -20,8 +18,9 @@ The adresses where the data will be written in the file created with the sample 
 ## Command line
 
 This PHP script can be used with a Command Line Interface
-
+```
  php cli.pl -l left.jpg -r right.jpg -o out.MPO
+```
 
 ## Web server
 It also can be used with a web server like this:
@@ -59,10 +58,6 @@ MANDATORY COMMAND LINE ARGUMENTS
 # Dependencies
 
 No dependencies are required
-
-# Why in PHP language
-
-This script be used online with a HTTP server to provide a service to upload two jpg files and download the generated MPO file.
 
 # Testing
 
