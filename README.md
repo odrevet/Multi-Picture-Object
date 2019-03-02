@@ -55,13 +55,10 @@ MANDATORY COMMAND LINE ARGUMENTS
 	-o FILENAME : output MPO file name to produce
 </pre>
 
-# Dependencies
-
-No dependencies are required
 
 # Testing
 
-I used an hexadecimal editor (EMACS hexl-mode) to check in the generated file if the data where correct
+I used an hexadecimal editor (EMACS hexl-mode) to check the generated file if the data where correct
 
 # 3DS limitations
 
