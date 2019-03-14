@@ -18,6 +18,19 @@ The adresses where the data will be written in the file created with the sample 
 ## Command line
 
 This PHP script can be used with a Command Line Interface
+
+* Command line arguments:
+
+MANDATORY COMMAND LINE ARGUMENTS
+
+<pre>
+	-l FILENAME : left jpg file
+	-r FILENAME : right jpg file
+	-o FILENAME : output MPO file name to produce
+</pre>
+
+* example :
+
 ```
  php cli.pl -l left.jpg -r right.jpg -o out.MPO
 ```
@@ -25,7 +38,7 @@ This PHP script can be used with a Command Line Interface
 ## Web server
 It also can be used with a web server like this:
 
- Assuming the requets has a file_left and a file_right parameters from a file input.
+ Assuming the requets has a file_left and a file_right parameters from two file input.
 
 ```PHP
 <?php
@@ -44,17 +57,6 @@ try {
 }
 ?>
 ```
-
-* Command line arguments:
-
-MANDATORY COMMAND LINE ARGUMENTS
-
-<pre>
-	-l FILENAME : left jpg file
-	-r FILENAME : right jpg file
-	-o FILENAME : output MPO file name to produce
-</pre>
-
 
 # Testing
 
