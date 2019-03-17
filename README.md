@@ -24,7 +24,7 @@ This PHP script can be used with a Command Line Interface by calling cli.php wit
 <pre>
 	-l FILENAME : left jpg file (mandatory argument)
 	-r FILENAME : right jpg file (mandatory argument)
-	-o FILENAME : output MPO file name to produce (defaults to output.mpo)
+	-o FILENAME : output MPO file name to produce (defaults to out.mpo)
 </pre>
 
 * example :
