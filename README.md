@@ -63,5 +63,3 @@ I used an hexadecimal editor (EMACS hexl-mode) to check the generated file if th
 # 3DS limitations
 
 The 3DS can not read 3D pictures with a width superior at 700px.
-You will need to convert your pictures before using mpo.pl is you want
-the result image to be compatible with your 3DS.
