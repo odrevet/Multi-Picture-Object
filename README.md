@@ -36,7 +36,7 @@ This PHP script can be used with a Command Line Interface by calling cli.php wit
 ## Web server
 It also can be used with a web server like this:
 
- Assuming the requets has a file_left and a file_right parameters from two file input.
+ Assuming the requets has a file_left and a file_right parameters from an HTML form with two file input.
 
 ```PHP
 <?php
