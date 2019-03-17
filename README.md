@@ -17,16 +17,14 @@ The adresses where the data will be written in the file created with the sample 
 
 ## Command line
 
-This PHP script can be used with a Command Line Interface
+This PHP script can be used with a Command Line Interface by calling cli.php with the php binary : 
 
 * Command line arguments:
 
-MANDATORY COMMAND LINE ARGUMENTS
-
 <pre>
-	-l FILENAME : left jpg file
-	-r FILENAME : right jpg file
-	-o FILENAME : output MPO file name to produce
+	-l FILENAME : left jpg file (mandatory argument)
+	-r FILENAME : right jpg file (mandatory argument)
+	-o FILENAME : output MPO file name to produce (defaults to output.mpo)
 </pre>
 
 * example :
