@@ -1,7 +1,7 @@
 generate a Multiple Picture Object files (.MPO) 3D picture from two jpeg files.
 
 This software implement in PHP the CIPA's MPO official reference document
-available at the following URL: http://www.cipa.jp/std/documents/e/DC-007_E.pdf
+available at the following URL: http://www.cipa.jp/std/documents/e/DC-008_E.pdf
 
 Nintendo 3DS Users can see the generated test 3D file here
 on github by clicking the out.MPO file then "View Raw".
@@ -11,7 +11,7 @@ on github by clicking the out.MPO file then "View Raw".
 The code is documented and annoted with the chapter and paragraph references to the CIPA manual.
 
 The adresses where the data will be written in the file created with the sample left.jpg and right.jpg are annoted in the comments.
-(e.g @0x42). Of course theses values will be differant with any other input files.
+(e.g @0x42). Of course theses values will be differant with another input files.
 
 # Usage
 
@@ -36,7 +36,7 @@ This PHP script can be used with a Command Line Interface by calling cli.php wit
 ## Web server
 It also can be used with a web server like this:
 
- Assuming the requets has a file_left and a file_right parameters from an HTML form with two file input.
+ Assuming the requets has a file_left and a file_right parameters from an HTML form with two file inputs.
 
 ```PHP
 <?php
