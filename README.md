@@ -11,7 +11,7 @@ on github by clicking the out.MPO file then "View Raw".
 The code is documented and annoted with the chapter and paragraph references to the CIPA manual.
 
 The adresses where the data will be written in the file created with the sample left.jpg and right.jpg are annoted in the comments.
-(e.g @0x42). Of course theses values will be differant with another input files.
+(e.g @0x42). Theses values may be differant with another input files.
 
 # Usage
 
