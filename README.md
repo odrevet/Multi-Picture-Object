@@ -1,7 +1,7 @@
 generate a Multiple Picture Object files (.MPO) 3D picture from two jpeg files.
 
 This software implement in PHP the CIPA's MPO official reference document
-available at the following URL: http://www.cipa.jp/std/documents/e/DC-007_E.pdf
+available at the following URL: http://www.cipa.jp/std/documents/download_e.html?DC-007_E
 
 Nintendo 3DS Users can see the generated test 3D file here
 on github by clicking the out.MPO file then "View Raw".
