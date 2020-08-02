@@ -16,8 +16,10 @@ function read_meta($img_data){
     //get the meta part of the image (until Start Of Scan)
     $SOS_pos = strpos($img_data, MARKER_SOS);
     $img_data_header = substr($img_data, 0, $SOS_pos);
+    $pos = MARKER_SIZE;   //after SOS
 
     $APP0_pos = strpos($img_data_header, MARKER_APP0);
+
     if($APP0_pos){
         $pos = $APP0_pos;
         $len_str = substr($img_data_header, $pos+MARKER_SIZE, LEN_SIZE);
@@ -25,6 +27,7 @@ function read_meta($img_data){
         $meta['APP0']['pos'] = $pos;
         $meta['APP0']['len'] = $len;
     }
+
     $APP1_pos = strpos($img_data_header, MARKER_APP1, $pos);
     if($APP1_pos){
         $pos = $APP1_pos;
