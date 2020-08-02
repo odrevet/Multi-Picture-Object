@@ -17,7 +17,7 @@ function read_meta($img_data)
     //get the meta part of the image (until Start Of Scan)
     $SOS_pos = strpos($img_data, MARKER_SOS);
     $img_data_header = substr($img_data, 0, $SOS_pos);
-    $pos = MARKER_SIZE; //after SOS
+    $pos = MARKER_SIZE; //after SOI
 
     $APP0_pos = strpos($img_data_header, MARKER_APP0);
 
@@ -64,21 +64,12 @@ function set_APP2(&$img_data)
     if (array_key_exists('APP2', $meta)) {
         //erase APP2 so we can replace it with our data (UNTESTED)
         $APP2_POS = $meta['APP2']['pos'];
-        $img_data = substr_replace($img_data,
-            '',
-            $APP2_POS,
-            $meta['APP2']['len']);
+        $img_data = substr_replace($img_data, '', $APP2_POS, $meta['APP2']['len']);
     } else {
         if (array_key_exists('APP0', $meta)) {
-            $APP2_POS =
-                $meta['APP0']['pos'] +
-                $meta['APP0']['len'] +
-                MARKER_SIZE;
+            $APP2_POS = $meta['APP0']['pos'] + $meta['APP0']['len'] + MARKER_SIZE;
         } else if (array_key_exists('APP1', $meta)) {
-            $APP2_POS =
-                $meta['APP1']['pos'] +
-                $meta['APP1']['len'] +
-                MARKER_SIZE;
+            $APP2_POS = $meta['APP1']['pos'] + $meta['APP1']['len'] + MARKER_SIZE;
         } else {
             $APP2_POS = MARKER_SIZE; //after SOI marker
         }
