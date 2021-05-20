@@ -30,7 +30,7 @@ This PHP script can be used with a Command Line Interface by calling cli.php wit
 * example :
 
 ```
- php cli.pl -l left.jpg -r right.jpg -o out.MPO
+ php cli.php -l left.jpg -r right.jpg -o out.MPO
 ```
 
 ## Web server
